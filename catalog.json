@@ -1,6 +1,6 @@
 {
   "v": 1,
-  "ts": "2026-11-04T18:49:09Z",
+  "ts": "2026-11-04T18:49:56Z",
   "repo": "Maddog3010/strom-waerme-addons",
   "addons": [
     {
@@ -33,6 +33,37 @@
       "notes": [
         "**Jetzt als Addon**: unter Einstellungen › Addons installieren, pausieren und deinstallieren, Updates aus dem Katalog",
         "Wer das Lab „Müllabfuhr“ an hatte, bekommt das Addon beim Update automatisch, alle Einstellungen bleiben erhalten"
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "id": "licht",
+      "n": 18,
+      "name": "Licht & Lampen",
+      "short": "Licht",
+      "icon": "lamp",
+      "tag": "Lampen schalten, dimmen und Szenen",
+      "desc": "Alle Lampen nach Räumen, schalten und dimmen, Szenenknöpfe wie „Gute Nacht“ und „Ankommen“ und ein Hinweis, wenn Licht lange in leeren Räumen brennt.",
+      "version": "0.1.0",
+      "build": 1,
+      "stage": "dev",
+      "api": 1,
+      "core_min": "2026.11.1b12",
+      "needs": {
+        "domains": [
+          "light"
+        ],
+        "text": "Noch keine Lampe in Home Assistant gefunden."
+      },
+      "optional": [],
+      "sponsor": false,
+      "network": [],
+      "url": "https://github.com/Maddog3010/strom-waerme-addons/releases/download/licht-0.1.0-b1/licht-0.1.0-b1.zip",
+      "sha256": "078f56ea38c0be1bf7a067cfaf76533e1565c8a64a5e7b82b50f804bdf61061c",
+      "size": 7755,
+      "notes": [
+        "**Jetzt als Addon**: unter Einstellungen › Addons installieren, pausieren und deinstallieren, Updates aus dem Katalog",
+        "Wer das Lab „Licht & Lampen“ an hatte, bekommt das Addon beim Update automatisch, alle Einstellungen bleiben erhalten"
       ],
       "date": "2026-11-04"
     },
