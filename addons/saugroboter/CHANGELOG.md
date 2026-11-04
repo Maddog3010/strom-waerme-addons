@@ -1,6 +1,10 @@
 # Modul 21 Saugroboter
 
 ## [0.1.1] Build 1 - 2026-11-04
+- Kommt jetzt aus dem Addon-Katalog und bekommt Updates unabhängig von der Integration
+- Deine Räume, Ziele und Fahrten werden übernommen
+
+## [0.1.1] Build 1 - 2026-11-04
 - **Kommt jetzt aus dem Addon-Katalog** (Maddog3010/strom-waerme-addons) und bekommt Updates unabhängig von der Integration
 - Deine Räume, Ziele und Fahrten werden übernommen
 
