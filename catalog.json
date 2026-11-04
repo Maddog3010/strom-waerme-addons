@@ -1,6 +1,6 @@
 {
   "v": 1,
-  "ts": "2026-11-04T17:08:20Z",
+  "ts": "2026-11-04T17:48:37Z",
   "repo": "Maddog3010/strom-waerme-addons",
   "addons": [
     {
@@ -11,8 +11,8 @@
       "icon": "robot",
       "tag": "Räume, Karte, Status und Wartung deiner Saugroboter",
       "desc": "Alle Saugroboter im Haus auf einer Seite: Status und Fortschritt, wann welcher Raum zuletzt gereinigt wurde, Raumreinigung mit einem Tipp, Karte, Woche und Verschleißteile. Zuerst für Roborock, Grundfunktionen für jeden Saugroboter.",
-      "version": "0.1.1",
-      "build": 1,
+      "version": "0.1.2",
+      "build": 2,
       "stage": "dev",
       "api": 1,
       "core_min": "2026.11.1b7",
@@ -30,12 +30,13 @@
       ],
       "sponsor": false,
       "network": [],
-      "url": "https://github.com/Maddog3010/strom-waerme-addons/releases/download/saugroboter-0.1.1-b1/saugroboter-0.1.1-b1.zip",
-      "sha256": "3cc441a7ccbf28902f46478b7a619d1ee5affaa91a4c15eadc99cde34e6f1610",
-      "size": 22147,
+      "url": "https://github.com/Maddog3010/strom-waerme-addons/releases/download/saugroboter-0.1.2-b2/saugroboter-0.1.2-b2.zip",
+      "sha256": "8dd92e87edcc2eb870bc8d014a6979d9a11f93581c199b2d7ce92c6c288dbfdd",
+      "size": 23015,
       "notes": [
-        "Kommt jetzt aus dem Addon-Katalog und bekommt Updates unabhängig von der Integration",
-        "Deine Räume, Ziele und Fahrten werden übernommen"
+        "Einstellungen auch in den Haupteinstellungen: unter Module, unter Addons und in der Suche („Saugroboter“, „Raum“, „Meldung“ …)",
+        "Messwerk zeigt die Sensoren der Roboter (Akku, aktueller Raum, Verschleißteile, Karte) mit „genutzt in Modul 21“",
+        "Aus der Suche oder dem Messwerk öffnet sich gleich der passende Reiter"
       ],
       "date": "2026-11-04"
     }
