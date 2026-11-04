@@ -285,11 +285,23 @@ def zip_bytes(aid: str, files: dict[str, bytes]) -> bytes:
 
 
 def changelog_add(old: str, version: str, build: int, notes: list[str], name: str) -> str:
+    """Neuen Abschnitt oben einfügen. Gibt es diese Version mit diesem Build schon, wird ihr Abschnitt ersetzt,
+    doppelte Abschnitte derselben Version fallen weg."""
     head = f"## [{version}] Build {build} - {datetime.now().strftime('%Y-%m-%d')}\n" + "".join(f"- {n}\n" for n in notes) + "\n"
     if not old.strip():
         return f"# Modul {name}\n\n" + head
-    i = old.find("\n## ")
-    return old[: i + 1] + head + old[i + 1:] if i >= 0 else old.rstrip() + "\n\n" + head
+    parts = re.split(r"(?m)^(?=## \[)", old)
+    title, secs = parts[0], parts[1:]
+    seen, keep = set(), []
+    for sec in secs:
+        m = re.match(r"## \[([^\]]+)\](?: Build (\d+))?", sec)
+        key = (m.group(1), int(m.group(2) or 1)) if m else None
+        if key == (version, build) or (key and key in seen):
+            continue
+        if key:
+            seen.add(key)
+        keep.append(sec if sec.endswith("\n\n") else sec.rstrip("\n") + "\n\n")
+    return (title if title.endswith("\n\n") else title.rstrip("\n") + "\n\n") + head + "".join(keep).rstrip("\n") + "\n"
 
 
 # ------------------------------------------------------------------ Ablauf
